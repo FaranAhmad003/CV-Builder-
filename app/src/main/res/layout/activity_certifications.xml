@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue"
+    tools:context=".Certifications">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Sky_Blue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/folder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CV Builder"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Heading -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Certifications"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Certification Name -->
+            <EditText
+                android:id="@+id/etCertificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Certification Title"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/input_field_background" />
+
+            <!-- Organization -->
+            <EditText
+                android:id="@+id/etOrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Issuing Organization"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/input_field_background" />
+
+            <!-- Year Spinner -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:textColor="@color/black"
+                android:layout_marginBottom="4dp" />
+
+            <Spinner
+                android:id="@+id/spinnerCertYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Add & Save Buttons -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddCert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Certification"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSaveCert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/black"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

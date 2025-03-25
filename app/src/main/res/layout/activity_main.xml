@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/folder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Top_Bar"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:weightSum="1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_image"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_button" />
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_button"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+
+        <!-- Button Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPersonalDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_details"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/summary"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEducation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/education"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/experience"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCertifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/certifications"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnReferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/references"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button" />
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Submit"
+            android:backgroundTint="@color/Navy_Blue"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_button" />
+    </LinearLayout>
+</LinearLayout>

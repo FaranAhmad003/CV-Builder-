@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">CV_builder</string>
+    <string name="Top_Bar">CV Builder</string>
+    <string name="Submit">Submit</string>
+    <string name="select_image">Profile Picture</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="summary">Summary</string>
+    <string name="education">Education</string>
+    <string name="experience">Experience</string>
+    <string name="certifications">Certifications</string>
+    <string name="references">References</string>
+
+
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email Address</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="github">Github</string>
+    <string name="save">Save</string>
+
+    <string name="write_summary">Write Sumary ...</string>
+    <string name="save_summary">Save Summary</string>
+
+    <string name="title_education">Education Details</string>
+    <string name="education_level">Education Level</string>
+    <string name="matric">Matric</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="bachelors">BAchelors</string>
+    <string name="masters">Masters</string>
+    <string name="years_of_completion">Years to Complete</string>
+    <string name="name_of_institution">Institution Name</string>
+    <string name="add">Add</string>
+
+
+
+</resources>
